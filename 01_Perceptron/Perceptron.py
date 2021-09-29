@@ -1,23 +1,23 @@
 import numpy as np
 
 class Perceptron:
-    """Perceptron classifier.
+    #Perceptron classifier.
 
-    Parameters
-    ------------
+    #Parameters
+    #------------
     eta : float
-        Learning rate (between 0.0 and 1.0)
+        #Learning rate (between 0.0 and 1.0)
     n_iter : int
-        Passes over the training dataset.
+        #Passes over the training dataset.
 
-    Attributes
-    -----------
+    #Attributes
+    #-----------
     w_ : 1d-array
-        Weights after fitting.
+        #Weights after fitting.
     errors_ : list
-        Number of misclassifications in every epoch.
+        #Number of misclassifications in every epoch.
 
-    """
+
     def __init__(self, eta=0.01, n_iter=10):
         self.eta = eta
         self.n_iter = n_iter
@@ -41,6 +41,9 @@ class Perceptron:
         self.w_ = np.zeros(1 + X.shape[1])
 
         # TODO: Put your code
+
+
+
         return self
 
     def __net_input(self, X):
