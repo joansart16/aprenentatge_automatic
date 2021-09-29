@@ -12,7 +12,8 @@ class Perceptron:
 
     #Attributes
     #-----------
-    w_ : 1d-array
+    w_ = []
+        #1d-array
         #Weights after fitting.
     errors_ : list
         #Number of misclassifications in every epoch.
