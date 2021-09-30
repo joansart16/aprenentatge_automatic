@@ -1,7 +1,7 @@
 import numpy as np
 
 class Perceptron:
-    #Perceptron classifier.
+    """Perceptron classifier.
 
     #Parameters
     #------------
@@ -12,8 +12,7 @@ class Perceptron:
 
     #Attributes
     #-----------
-    w_ = []
-        #1d-array
+    w_ : 1d-array
         #Weights after fitting.
     errors_ : list
         #Number of misclassifications in every epoch.
@@ -21,7 +20,7 @@ class Perceptron:
 
     def __init__(self, eta=0.01, n_iter=10):
         self.eta = eta
-        self.n_iter = n_iter
+        self.n_iter = n_iter """
 
     def fit(self, X, y):
         """Fit training data.
@@ -43,6 +42,8 @@ class Perceptron:
 
         # TODO: Put your code
 
+        for n in X:
+            y1 = __net_input(self, n)
 
 
         return self
